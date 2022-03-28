@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "DDYC9UzzYOnZ7RcOTb74WDHNuiMHzaZLHLM5hMoKhO/Tr8avekw55/4EsxTn2SfFYrk2Q2bxfdDZ+qB2qWms9A==",
+  "dgSpecHash": "GZcWfhixrDMhoMUCbSi3qWfeSxT4G6hZVHHYNvO9gXwzfKCxB08LtP7nRp83VpRDEVa0BEOJ9LkN6cHmwSBd4w==",
   "success": true,
   "projectFilePath": "/Users/meilar/Epicodus/HolocenePark.Solution/HolocenePark/HolocenePark.csproj",
   "expectedPackageFiles": [
+    "/Users/meilar/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
+    "/Users/meilar/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/meilar/.nuget/packages/microsoft.entityframeworkcore/5.0.0/microsoft.entityframeworkcore.5.0.0.nupkg.sha512",
     "/Users/meilar/.nuget/packages/microsoft.entityframeworkcore.abstractions/5.0.0/microsoft.entityframeworkcore.abstractions.5.0.0.nupkg.sha512",
     "/Users/meilar/.nuget/packages/microsoft.entityframeworkcore.analyzers/5.0.0/microsoft.entityframeworkcore.analyzers.5.0.0.nupkg.sha512",
+    "/Users/meilar/.nuget/packages/microsoft.entityframeworkcore.design/5.0.0/microsoft.entityframeworkcore.design.5.0.0.nupkg.sha512",
     "/Users/meilar/.nuget/packages/microsoft.entityframeworkcore.relational/5.0.0/microsoft.entityframeworkcore.relational.5.0.0.nupkg.sha512",
     "/Users/meilar/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "/Users/meilar/.nuget/packages/microsoft.extensions.caching.abstractions/5.0.0/microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
