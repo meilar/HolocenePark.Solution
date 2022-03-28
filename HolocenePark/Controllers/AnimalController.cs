@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using HolocenePark.Models;
@@ -36,6 +37,37 @@ namespace HolocenePark.Controllers
         return NotFound();
       }
       return animal;
+    }
+    [HttpPut("{id}")]
+    public async Task<IActionResult> Put (int id, Animal animal)
+    {
+      if(id != animal.AnimalId)
+      {
+        return BadRequest();
+      }
+      _db.Entry(animal).State = EntityState.Modified;
+      
+      try
+      {
+        await _db.SaveChangesAsync();
+        return CreatedAtAction(nameof(GetAnimal), new { id = animal.AnimalId }, animal);
+      }
+      catch (DbUpdateConcurrencyException)
+      {
+        if (!AnimalExists(id))
+        {
+          return NotFound();
+        }
+        else
+        {
+          throw;
+        }
+      }
+      
+    }
+    private bool AnimalExists(int id)
+    {
+      return _db.Animals.Any(e => e.AnimalId == id);
     }
   }
 }
