@@ -2,14 +2,16 @@
 using HolocenePark.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace HolocenePark.Migrations
 {
     [DbContext(typeof(HoloceneParkContext))]
-    partial class HoloceneParkContextModelSnapshot : ModelSnapshot
+    [Migration("20220328170220_AddController")]
+    partial class AddController
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -25,7 +27,7 @@ namespace HolocenePark.Migrations
                     b.Property<int>("Age")
                         .HasColumnType("int");
 
-                    b.Property<string>("Gender")
+                    b.Property<string>("Genger")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<string>("Name")
